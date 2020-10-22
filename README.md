@@ -1,2 +1,3 @@
 # Generator_nahodneho_textu
-dadaistické texty udělané počítačem ze vstupu
+dadaistický text udělaný počítačem ze vstupu
+<h1>Jak na to</h1>
