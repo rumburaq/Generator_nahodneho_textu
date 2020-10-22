@@ -47,17 +47,18 @@ int main()
         }
         if(ps == (Ncislo - 1)){
             //z = pole[j];
-            printf("TOHLE SLOVO ");
-            //while(z != ' '){
-            //z = pole[j];
-            //++j;
-            //putchar(z);
-           // }
+            j++;
+            //printf("TOHLE SLOVO ");
+            while(z != ' '){
+            z = pole[j];
+            ++j;
+            putchar(z);
+            }
         }
                 
     }
     
-    printf("Pocet slov: %d", ps);
+    printf("Pocet slov: %d", ps + 1);
     /*
     lower = 2, upper = ps, count = 1; //count vzdy na 1! 
     Ncislo = randoms(lower, upper, count); //generating random num
