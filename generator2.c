@@ -1,9 +1,9 @@
-//lepsi verze
-
 #include <stdio.h>
 #include <stdlib.h> 
 #include <time.h> 
-#define VELIKOST 200
+#define VELIKOST 300
+
+int randoms(int lower, int upper, int count);
 
 int main()
 {
@@ -62,8 +62,7 @@ int main()
     
 }
 
-int randoms(int lower, int upper,  
-                             int count) 
+int randoms(int lower, int upper, int count) 
 { 
     int i;
     int num;
@@ -74,3 +73,6 @@ int randoms(int lower, int upper,
     } 
     return num; 
 }
+
+//test vstupu
+//jadna dva tri ctyri pet sest sedm osm devet deset //jedenact dvanact trinact
