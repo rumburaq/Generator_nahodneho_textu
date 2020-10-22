@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h> 
 #include <time.h> 
-#define VELIKOST 300
+//#define VELIKOST 500
 
 int randoms(int lower, int upper, int count);
 
 int main()
 {
-    char pole[VELIKOST];
+    char pole[300];
     int x = 0; // used for index in an array
     int y = 1; // -||-
     int lower; 
@@ -32,7 +32,7 @@ int main()
         if (pole[j] == ' ' && pole[j+1] != ' ')
             ps++;    
     }
-
+    
     printf("poct slov: %d\n", ps + 1);
     
     //gen Ncislo
@@ -58,7 +58,7 @@ int main()
                 
     }
     
-    printf("Pocet slov: %d", ps + 1);
+    //printf("Pocet slov: %d", ps + 1);
     
 }
 
@@ -75,4 +75,4 @@ int randoms(int lower, int upper, int count)
 }
 
 //test vstupu
-//jadna dva tri ctyri pet sest sedm osm devet deset //jedenact dvanact trinact
+//jadna dva tri ctyri pet sest sedm osm devet deset jedenact dvanact trinact
