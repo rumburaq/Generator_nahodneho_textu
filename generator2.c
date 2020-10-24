@@ -7,7 +7,7 @@ int randoms(int lower, int upper, int count);
 
 int main()
 {
-    char pole[300];
+    char pole[200];
     int x = 0; // used for index in an array
     int y = 1; // -||-
     int lower; 
@@ -35,6 +35,7 @@ int main()
     
     printf("poct slov: %d\n", ps + 1);
     
+    
     //gen Ncislo
     lower = 2, upper = ps, count = 1; //count vzdy na 1! 
     Ncislo = randoms(lower, upper, count); //generating random num
@@ -48,17 +49,18 @@ int main()
             ps++;
         }
         if(ps == (Ncislo - 1)){
-            j++;
+            j++; //preskoci 1. mezeru
             while(z != ' '){  //dokud se znak nerovna mezera
             z = pole[j];
             ++j;
-            putchar(z); //vypis ten znak n kterim jses
+            putchar(z); //vypis ten znak na kterim jses
             }
+            ps++;
         }
                 
     }
     
-    //printf("Pocet slov: %d", ps + 1);
+    printf("\nPocet slov: %d", ps + 1);
     
 }
 
@@ -73,6 +75,3 @@ int randoms(int lower, int upper, int count)
     } 
     return num; 
 }
-
-//test vstupu
-//jadna dva tri ctyri pet sest sedm osm devet deset jedenact dvanact trinact
